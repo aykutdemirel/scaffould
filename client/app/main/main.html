@@ -1,0 +1,26 @@
+<div class="main-inner">
+    <div class="content">
+        <div class="left-sidenav">
+            <left-nav-bar></left-nav-bar>
+        </div>
+        <div class="sidenav-content">
+            <div ng-include="'components/nav/top-nav-bar/top-nav-bar.html'"></div>
+            <div class="container main-container cs-container-fluid">
+                <div class="main-content-wrapper" ui-view="">
+                </div>
+            </div>
+            <!--<div draggable class="json-formatter-wrapper" ng-class="{'minimize': vm.heightControl}" ng-if="vm.isOpen">
+                <div class="devToolBtnWrapper">
+                    <a href="#" ng-click="vm.closeDeveloperTool()"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <a href="#" ng-click="vm.changeHeightDeveloperTool()"><i class="fa fa-minus-square-o" aria-hidden="true"></i></a>
+                    <a href="#" ng-click="vm.clearDeveloperTool()"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                </div>
+                <json-formatter json="{console: vm.json}" open="3" class="json-formatter-dark p-20" style="background-color: rgb(30, 30, 30);"></json-formatter>
+            </div>-->
+
+            <!-- Notifications -->
+            <div growl></div>
+        </div>
+    </div>
+    <div ng-include="'components/footer/footer.html'"></div>
+</div>
