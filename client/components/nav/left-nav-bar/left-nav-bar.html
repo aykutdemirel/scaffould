@@ -10,7 +10,7 @@
 
         <div class="clear"></div>
         <ul>
-            <li ng-class="{active: vm.active(item.route)}" ng-repeat="item in vm.menu" authorization auth="{{item.authorization}}">
+            <li ng-class="{active: vm.active(item.route)}" ng-repeat="item in vm.menu">
                 <a ng-href="{{item.link}}">{{item.title}}</a>
             </li>
         </ul>
