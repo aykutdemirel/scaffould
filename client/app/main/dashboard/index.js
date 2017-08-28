@@ -10,11 +10,10 @@
     function Config ($stateProvider) {
         $stateProvider
             .state('main.dashboard', {
-                url: '/admin/dashboard',
+                url: '/dashboard',
                 templateUrl: 'app/main/dashboard/dashboard.html',
                 controller: 'DashboardCtrl',
-                controllerAs: 'vm',
-                authenticate: true
+                controllerAs: 'vm'
             })
     }
 })()

@@ -24,9 +24,10 @@
         function activate () {
 
             var _user = localStorageService.get(Settings.tokenName+"-user")
-
-            vm.name = _user.name+ " " + _user.surname
-            vm.userName = _user.username
+            if(_user){
+                vm.name = _user.name+ " " + _user.surname
+                vm.userName = _user.username
+            }
         }
 
         function logout () {

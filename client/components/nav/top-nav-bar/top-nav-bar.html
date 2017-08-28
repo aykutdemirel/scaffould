@@ -12,7 +12,7 @@
         <div ncy-breadcrumb class="breadcrumbs hidden-xs"></div>
 
 
-        <div class="user-menu" uib-dropdown keyboard-nav>
+        <div ng-if="vm.user" class="user-menu" uib-dropdown keyboard-nav>
             <a id="simple-btn-keyboard-nav" class="user-name" uib-dropdown-toggle>
                 <i class="fa fa-user"></i> <span>{{vm.name}} <small>({{vm.userName}})</small></span> <i class="fa fa-angle-down pull-right"></i>
             </a>
@@ -21,17 +21,6 @@
                 <li role="menuitem"><a ng-click="vm.logout()"><i class="fa fa-power-off"></i> Çıkış yap</a></li>
             </ul>
         </div>
-        <!--
-        <div class="menu">
-            <ul>
-                <li><a href="#"><i class="fa fa-user-times"></i></a></li>
-                <li><a href="#"><i class="fa fa-users"></i></a></li>
-                <li><a href="#"><i class="fa fa-id-card-o"></i></a></li>
-                <li><a href="#"><i class="fa fa-list-ul"></i></a></li>
-                <li><a href="#"><i class="fa fa-check-square-o"></i></a></li>
-            </ul>
-        </div>
-        -->
          
     </div>
 </nav>
