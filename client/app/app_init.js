@@ -8,32 +8,10 @@
 
     // do
     var settings = {
-        url:'http://10.135.43.104:8206/',
-        tokenName:'smartcity',
-        website : {terms:'',policy:''},
-        socketUrl:"http://10.135.3.131",
-        socketPort:"8217",
-        vatandasUserName:'karsVatandas',
-        videoWallUserName:'karsVideowall',
-        kioskUserName:'karsKiosk',
-        domainRef:'1baf094a-a388-4ad4-905c-03fecc7216a0'
+        tokenName:'scaffold'
     }
 
-    //prod
-    // var settings = {
-    //     url:'http://api-inn.sehirlerakillaniyor.com/',
-    //     tokenName:'smartcity',
-    //     website : {terms:'',policy:''},
-    //     socketUrl:"http://socket-inn.sehirlerakillaniyor.com",
-    //     socketPort:"80",
-    //     vatandasUserName:'karsVatandas',
-    //     videoWallUserName:'karsVideowall',
-    //     kioskUserName:'karsKiosk',
-    //     domainRef:'1baf094a-a388-4ad4-905c-03fecc7216a0'
-    // }
-
     settings.user = localStorage.get(settings.tokenName+"-user")
-    settings.selectedDomain = localStorage.get(settings.tokenName+"-domainId")
 
     function bootstrap () {
         angular.module('scaffold.settings', []).constant('Settings', settings)
