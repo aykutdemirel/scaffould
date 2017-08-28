@@ -2,7 +2,7 @@
   'use strict'
 
   angular
-    .module('smartcity.app')
+    .module('scaffold.app')
     .factory('Auth', Service)
 
   function Service ($q, $http, $location, Settings, Notificator, PublicApi, $base64, localStorageService) {

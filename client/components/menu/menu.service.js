@@ -5,7 +5,7 @@
     var is = window.is
 
     angular
-        .module('smartcity.app')
+        .module('scaffold.app')
         .factory('Menu', Service)
 
     function Service ($location) {

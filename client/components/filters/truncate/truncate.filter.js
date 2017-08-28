@@ -3,7 +3,7 @@
 
   // TODO: add unit tests
   angular
-    .module('smartcity.app')
+    .module('scaffold.app')
     .filter('truncate', Filter);
 
   function Filter() {

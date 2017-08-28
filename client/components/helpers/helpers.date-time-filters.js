@@ -5,7 +5,7 @@
     var _ = window._
 
     angular
-        .module('smartcity.app')
+        .module('scaffold.app')
         .factory('HelpersDateTimeFilters', Service)
 
     function Service (moment) {

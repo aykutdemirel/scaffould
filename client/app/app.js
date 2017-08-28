@@ -12,7 +12,6 @@
         'ngAnimate',
         'ui.router',
         'ui.bootstrap',
-        'ui.select',
         'ui.utils',
         'ui.ace',
         'restangular',

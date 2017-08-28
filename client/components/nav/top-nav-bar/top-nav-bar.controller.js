@@ -4,7 +4,7 @@
     var angular = window.angular
 
     angular
-        .module('smartcity.app')
+        .module('scaffold.app')
         .controller('NavCtrl', Controller)
 
     function Controller (Menu, Auth, localStorageService, Settings) {

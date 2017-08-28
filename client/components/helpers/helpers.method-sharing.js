@@ -2,8 +2,8 @@
     'use strict'
 
     angular
-        .module('smartcity.app')
-        .factory('SmartCityMethodSharing', Service)
+        .module('scaffold.app')
+        .factory('MethodSharing', Service)
 
     function Service () {
 

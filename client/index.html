@@ -16,27 +16,13 @@
 <body>
 
     <!-- build:css(client) app/vendor.css -->
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.min.css" />
-    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.min.css" />
-    <link rel="stylesheet" href="bower_components/ng-tags-input/ng-tags-input.min.css" />
     <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css" />
-    <link rel="stylesheet" href="bower_components/angular-ui-switch/angular-ui-switch.min.css" />
-    <link rel="stylesheet" href="bower_components/angular-xeditable/dist/css/xeditable.css" />
-    <link rel="stylesheet" href="bower_components/json-formatter/dist/json-formatter.min.css" />
-    <link rel="stylesheet" href="bower_components/gridstack/dist/gridstack.min.css" />
-    <link rel="stylesheet" href="external_components/kendo-only-grid/styles/kendo.common-material.min.css" />
-    <link rel="stylesheet" href="external_components/kendo-only-grid/styles/kendo.material.min.css" />
-    <link rel="stylesheet" href="bower_components/jquery-minicolors/jquery.minicolors.css" />
-    <link rel="stylesheet" href="bower_components/angularjs-slider/dist/rzslider.min.css" />
-    <link rel="stylesheet" href="bower_components/angular-ui-switch/angular-ui-switch.min.css">
 
     <!-- endbuild -->
 
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/map.css" />
     <!-- endbuild -->
 
     <!-- App Content -->
@@ -44,34 +30,10 @@
 
     <div class="main-wrapper" ui-view=""></div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="bower_components/ace-builds/src-min-noconflict/ace.js"></script>
 
     <!-- Mapbox Source -->
 
-    <!-- Leaflet -->
-    <link href="external_components/mapbox/leaflet/leaflet.css" rel="stylesheet" />
-    <script src="external_components/mapbox/leaflet/leaflet.js"></script>
-
-    <!-- Leaflet Full Screen -->
-    <script src="external_components/mapbox/full-screen/Control.FullScreen.js"></script>
-
-    <!-- MapboxGL-->
-    <link href="external_components/mapbox/mapbox-gl.css" rel="stylesheet" />
-    <script src="external_components/mapbox/mapbox-gl.js"></script>
-    <script src="external_components/mapbox/leaflet-mapbox-gl.js"></script>
-
-    <!-- Mapbox GeoCoder -->
-    <link href="external_components/mapbox/geocoder/Control.Geocoder.css" rel="stylesheet" />
-    <script src="external_components/mapbox/geocoder/Control.Geocoder.js"></script>
-
-    <!-- Leaflet MarkerCluster -->
-    <link href="external_components/mapbox/marker-cluster/MarkerCluster.css" rel="stylesheet" />
-    <script src="external_components/mapbox/marker-cluster/leaflet.markercluster.js"></script>
-
-    <!-- Leaflet Draw -->
-    <link href="external_components/mapbox/leaflet/leaflet.draw.css" rel="stylesheet" />
-    <script src="external_components/mapbox/leaflet/leaflet.draw.js"></script>
 
     <!-- build:js(client) app/vendor.js -->
     <script src="bower_components/angular/angular.js"></script>
@@ -82,12 +44,7 @@
     <script src="bower_components/restangular/dist/restangular.js"></script>
     <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/angular-ui-select/dist/select.min.js"></script>
-    <script src="bower_components/ng-tags-input/ng-tags-input.min.js"></script>
     <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
-    <script src="bower_components/angular-ui-switch/angular-ui-switch.min.js"></script>
-    <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
-    <script src="bower_components/json-formatter/dist/json-formatter.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
     <script src="bower_components/moment/moment.js"></script>
@@ -95,34 +52,15 @@
     <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
     <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
-    <script src="bower_components/is_js/is.js"></script>
-    <script src="bower_components/gridstack/dist/gridstack.min.js"></script>
     <script src="bower_components/angular-base64/angular-base64.min.js"></script>
-    <script src="bower_components/jquery-minicolors/jquery.minicolors.min.js"></script>
-    <script src="bower_components/angular-minicolors/angular-minicolors.js"></script>
-    <script src="bower_components/angularjs-slider/dist/rzslider.min.js"></script>
     <script src="bower_components/image-scale/image-scale.min.js"></script>
-    <script src="bower_components/angular-ui-switch/angular-ui-switch.min.js"></script>
     <script src="bower_components/sockjs-client/dist/sockjs.min.js"></script>
     <script src="bower_components/stomp-websocket/lib/stomp.min.js"></script>
     <script src="bower_components/ng-stomp/dist/ng-stomp.min.js"></script>
     <script src="external_components/fuse/src/fuse.min.js"></script>
-    <script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
     <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
-    <script src="bower_components/bootstrap-ui-datetime-picker/dist/datetime-picker.min.js"></script>
-    <script src="external_components/kendo-only-grid/kendo.custom.min.js"></script>
     <script src="bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
-    <script src="bower_components/angular-progress-arc/angular-progress-arc.min.js"></script>
     <script src="bower_components/angular-ui-ace/ui-ace.js"></script>
-    <script src="bower_components/animejs/anime.min.js"></script>
-
-    <script src="external_components/ngDraggable/ngDraggable.js"></script>
-    <script src="external_components/fusionchart/fusioncharts.js"></script>
-    <script src="external_components/fusionchart/themes/fusioncharts.theme.carbon.js"></script>
-    <script src="external_components/fusionchart/themes/fusioncharts.theme.ocean.js"></script>
-    <script src="external_components/fusionchart/themes/fusioncharts.theme.zune.js"></script>
-    <!--<script src="external_components/jwplayer-7.9.3/jwplayer.js"></script>-->
-    <script src="external_components/bitmovingplayer/bitmovinplayer.js"></script>
 
     <!-- endbuild -->
 
@@ -135,8 +73,6 @@
     <!-- Helpers -->
     <script src="components/helpers/helpers.date-time-filters.js"></script>
     <script src="components/helpers/helpers.dummy-data.js"></script>
-    <script src="components/helpers/helpers.widget-style.js"></script>
-    <script src="components/helpers/helpers.core.js"></script>
     <script src="components/helpers/helpers.method-sharing.js"></script>
 
     <!-- Common Modules -->

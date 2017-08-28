@@ -2,7 +2,7 @@
     'use strict'
 
     angular
-      .module('smartcity.app')
+      .module('scaffold.app')
       .factory('Notificator', Notificator)
 
     function Notificator(growl, truncateFilter) {

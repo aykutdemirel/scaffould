@@ -5,7 +5,7 @@
   var XRegExp = window.XRegExp
 
   angular
-    .module('smartcity.app')
+    .module('scaffold.app')
     .factory('FormatChecker', FormatChecker)
 
   function FormatChecker () {

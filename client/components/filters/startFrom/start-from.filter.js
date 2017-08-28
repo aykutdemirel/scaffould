@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('smartcity.app')
+angular.module('scaffold.app')
 .filter('startFrom', function () {
     return function (input, pageNum, pageSize) {
         if (input) {

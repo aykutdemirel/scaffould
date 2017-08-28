@@ -4,7 +4,7 @@
     var angular = window.angular
 
     angular
-        .module('smartcity.app')
+        .module('scaffold.app')
         .directive('leftNavBar', Directive)
 
     function Directive ($compile) {
