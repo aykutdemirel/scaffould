@@ -6,8 +6,9 @@
     .factory('Auth', Service)
 
   function Service ($q, $http, $location, Settings, Notificator, PublicApi, $base64, localStorageService) {
-    var baseUrl = "iam-orchestration-service/iam"
-    var route = '/users'
+
+    var baseUrl = "{baseURL}"
+    var route = "{subroute}"
     var user = {}
     var account = {}
 

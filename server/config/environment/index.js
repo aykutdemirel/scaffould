@@ -38,7 +38,7 @@ var all = {
     },
 
     // Browser cookie token name
-    tokenName: 'smartcity.token',
+    tokenName: 'scaffold.token',
 
 }
 

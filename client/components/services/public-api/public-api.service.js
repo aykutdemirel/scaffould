@@ -5,7 +5,7 @@
     .module('scaffold.app')
     .factory('PublicApi', Service)
 
-  function Service (localStorageService, $location, Restangular, Settings, Notificator, LogService, $rootScope, $injector, $timeout, moment) {
+  function Service (localStorageService, $location, Restangular, Settings, Notificator, $rootScope, $injector, $timeout, moment) {
 
     var service = Restangular.withConfig(function (RestangularConfigurer) {
 
@@ -71,25 +71,6 @@
           newResponse = data
         }
 
-        $rootScope.$broadcast('addJsonViewerData', {
-          data: newResponse
-        });
-
-        LogService.push({
-            status:'COMPLETED',
-            level:'INFO',
-            dataType:'LOG',
-            iotRequest:JSON.stringify(response.config),
-            token:Settings.user.token,
-            userId:Settings.user.id,
-            userName:Settings.user.name,
-            domainId:Settings.user.domainRef,
-            serviceName:url,
-            logDate: moment().utc().toString(),
-            message:response.statusText,
-            action:'smart-city-ui'
-        })
-
         return newResponse
 
       })
@@ -112,20 +93,6 @@
           Notificator.errors.server()
           console.error(response)
         }
-
-        LogService.push({
-            status:'NOT_COMPLETED',
-            level:'ERROR',
-            dataType:'LOG',
-            iotRequest:JSON.stringify(response.config),
-            token:Settings.user.token,
-            userId:Settings.user.id,
-            userName:Settings.user.name,
-            domainId:Settings.user.domainRef,
-            serviceName:response.config.url,
-            logDate: moment().utc().toString(),
-            message:response.statusText
-        })
 
         if(response && response.status && response.statusText && response.data && response.data.error && response.config && response.config.url){
           Notificator.generic.push_err_notification(response.status + " - " + response.statusText + " <br/>" + JSON.stringify(response.data.error || '') + "<br />" + "url: "+ response.config.url)
